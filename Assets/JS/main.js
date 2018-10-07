@@ -1,0 +1,11 @@
+$(document).ready(function(){
+  $('.hero').hover(function(){
+    $(this).animate({borderRadius:"10"});
+    $(".typer").fadeOut();
+    $('.quote').delay(500).fadeIn();
+  },function(){
+      $(this).animate({borderRadius:"50"});
+      $(".typer").delay(500).fadeIn();
+      $(".quote").fadeOut();
+  });
+});
